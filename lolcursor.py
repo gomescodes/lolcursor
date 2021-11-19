@@ -1,6 +1,9 @@
 import json
+import sys
+import random
+from PySide6 import QtCore, QtWidgets, QtGui
 
-new_value = 2.0
+new_value = 100
 file_location = "C:/Users/gomes/Projects/lolcursor/clebinho.json"
 
 def find_value_line(lines):
@@ -47,4 +50,30 @@ def update_scale():
       file = open(file_location, "w")
       file.write(new_file)
 
-update_scale()
+def create_window():
+  window = QtWidgets.QWidget()
+  window.setWindowTitle("lolcursor")
+  
+  layout = QtWidgets.QVBoxLayout(window)
+  
+  label = QtWidgets.QLabel("Cursor Scale %")
+  layout.addWidget(label)
+  
+  input = QtWidgets.QSpinBox()
+  input.setRange(100, 400)
+  input.setSingleStep(25)
+  layout.addWidget(input)
+  
+  button = QtWidgets.QPushButton("Apply")
+  layout.addWidget(button)
+  
+  window.setFixedSize(220, 100)
+  window.show()
+  return window
+
+def main():
+  app = QtWidgets.QApplication([])
+  window = create_window()
+  sys.exit(app.exec())
+
+main()
