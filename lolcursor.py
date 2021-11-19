@@ -1,6 +1,4 @@
-import json
 import sys
-import random
 from PySide6 import QtCore, QtWidgets, QtGui
 
 new_value = 2.0
@@ -82,6 +80,8 @@ def create_window():
 def main():
   app = QtWidgets.QApplication([])
   window = create_window()
+
+  window.setWindowIcon(QtGui.QIcon('favicon.ico'))
 
   sys.exit(app.exec())
 
