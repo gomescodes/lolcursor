@@ -5,6 +5,9 @@ from PySide6 import QtCore, QtWidgets, QtGui
 
 new_value = 2.0
 file_location = "C:/Riot Games/League of Legends/Config/PersistedSettings.json"
+# test file location:
+# file_location = "C:/Riot Games/League of Legends/Config/PersistedSettings.json"
+
 
 def find_value_line(lines):
   scale_value_line = 0
