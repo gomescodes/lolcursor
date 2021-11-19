@@ -1,10 +1,11 @@
 import sys
 from PySide6 import QtCore, QtWidgets, QtGui
+from icon_fix import icon
 
 new_value = 2.0
 file_location = "C:/Riot Games/League of Legends/Config/PersistedSettings.json"
 # test file location:
-# file_location = "C:/Riot Games/League of Legends/Config/PersistedSettings.json"
+# file_location = "test.json"
 
 
 def find_value_line(lines):
@@ -81,7 +82,7 @@ def main():
   app = QtWidgets.QApplication([])
   window = create_window()
 
-  window.setWindowIcon(QtGui.QIcon('favicon.ico'))
+  window.setWindowIcon(QtGui.QIcon(icon))
 
   sys.exit(app.exec())
 
