@@ -9,9 +9,9 @@ Change your League of Legends cursor size above the in-game limit.
 - [@gomescodes](https://www.github.com/gomescodes)
 - [@aratakamikaze](https://www.github.com/aratakamikaze)
 
-## Roadmap
+## v2.0.0 Roadmap
 
-- [ ] Get the `PersistentSettings.json` value at app start.
+- [x] Get the `PersistentSettings.json` value at app start.
 
 - [ ] System tray icon.
 

@@ -20,6 +20,16 @@ def get_value(line):
   value_string = split_line[3]
   return float(value_string)
 
+def get_initial_value():
+  file = open(file_location, "r")
+  lines = file.readlines()
+  file.close()
+  scale_value_line = find_value_line(lines)
+  line = lines[scale_value_line]
+  actual_value = get_value(line)*100
+  return actual_value
+
+
 def make_substitute_line(split_line):
   new_line = ""
   for i in range(len(split_line)):
@@ -63,7 +73,7 @@ def create_window():
   input = QtWidgets.QSpinBox()
   input.setRange(100, 400)
   input.setSingleStep(25)
-  input.setValue(100)
+  input.setValue(get_initial_value())
   def update_new_value():
     global new_value
     new_value = input.value()/100
