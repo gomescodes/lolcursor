@@ -4,11 +4,11 @@
 
 Change your League of Legends cursor size above the in-game limit.
 
-
 ## Authors
 
 - [@gomescodes](https://www.github.com/gomescodes)
 - [@aratakamikaze](https://www.github.com/aratakamikaze)
+
 ## Roadmap
 
 - [ ] Get the `PersistentSettings.json` value at app start.
@@ -16,7 +16,6 @@ Change your League of Legends cursor size above the in-game limit.
 - [ ] System tray icon.
 
 - [ ] Keep running option.
-
 
 ## Test Locally
 
@@ -44,7 +43,6 @@ Start the app
   python lolcursor.py
 ```
 
-
 ## Building Executable
 
 Install dependency
@@ -59,8 +57,6 @@ Run pyinstaller
   pyinstaller .\lolcursor.py -F -w --icon=favicon.ico --add-data="favicon.ico;."
 ```
 
-
 ## License
 
 [GNU GLPv3](https://choosealicense.com/licenses/gpl-3.0/)
-
