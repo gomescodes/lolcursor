@@ -1,8 +1,10 @@
-# lolcursor
+<p align="center">
+  <h1>lolcursor</h1>
 
-<img src="https://raw.githubusercontent.com/gomescodes/lolcursor/main/favicon.ico" alt="drawing" width="200" />
+  <img src="https://raw.githubusercontent.com/gomescodes/lolcursor/main/favicon.ico" alt="drawing" width="200" />
 
-Change your League of Legends cursor size above the in-game limit.
+  Change your League of Legends cursor size above the in-game limit.
+</p>
 
 ## Authors
 
